@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 4</title>
+</head>
+<body>
+
+<h1>Meters to Centimeters Converter</h1>
+<p>Type any value to convert it to centimeters:</p>
+<p>
+<label>Meters:</label>
+<input id="inputm" type="number" placeholder="Meters" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>Centimeters: <span id="outputcm"></span></p>
+
+<script>
+	function LengthConverter(valnum) {
+		document.getElementById('outputcm').innerHTML=valnum/0.01;
+	}
+</script>
+
+</body>
+</html>
